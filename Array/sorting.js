@@ -1,24 +1,53 @@
 //Bubbble Sort
 
 
-function Bubbble_Sort(a) {
+// function Bubbble_Sort(a) {
+//     let temp;
+//     for (let i = 0; i < a.length; i++){
+//         for (let j = 0; j < (a.length - i); j++){
+//             if (a[j] > a[j + 1]) {
+//                 temp = a[j + 1];
+//                 a[j + 1] = a[j];
+//                 a[j] = temp;
+//             }
+//         }
+//     }
+//     return a;
+// }
+
+
+// let arr = [70, 20, 50, 60,2,3,4,5,6,7,32,1,4,6]
+
+// console.log(Bubbble_Sort(arr))
+
+
+/**Selection Sort */
+function Selection_Sort(a) {
+    
     let temp;
+    let index;
     for (let i = 0; i < a.length; i++){
-        for (let j = 0; j < (a.length - i); j++){
-            if (a[j] > a[j + 1]) {
-                temp = a[j + 1];
-                a[j + 1] = a[j];
-                a[j] = temp;
+        let min = a[i];
+        for (let j = i; j < a.length; j++){
+            
+            if (a[j] < min) {
+                min = a[j];
+                index = j;
+
             }
+            
         }
+        temp = a[i];
+        a[i] = min;
+        a[index] = temp;
+
     }
     return a;
 }
 
 
-let arr = [70, 20, 50, 60,2,3,4,5,6,7,32,1,4,6]
-
-console.log(Bubbble_Sort(arr))
+let arr = [70, 20, 50, 60,2,3,4,2,4,1]
+console.log(Selection_Sort(arr))
 
 //  Insertion Sort
 
