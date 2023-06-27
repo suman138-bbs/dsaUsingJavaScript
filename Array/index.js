@@ -40,19 +40,38 @@
 
 // if commona in both array return True Otherwise false
 
-let arr1 = [20, 30, 40, 50, 60];
-let arr2 = [60, 70, 80, 90];
+// let arr1 = [20, 30, 40, 50, 60];
+// let arr2 = [60, 70, 80, 90];
 
-function findMatch(a,b) {
-    for (let i = 0; i < a.length; i++){
-        for (let j = 0; j < b.length; j++){
-            if (a[i] === b[j]) {
-                return true
-            }
-        }
-    }
-    return false
-}
+// function findMatch(a,b) {
+//     for (let i = 0; i < a.length; i++){
+//         for (let j = 0; j < b.length; j++){
+//             if (a[i] === b[j]) {
+//                 return true
+//             }
+//         }
+//     }
+//     return false
+// }
 
 
-console.log(findMatch(arr1,arr2))
+// console.log(findMatch(arr1,arr2))
+
+// let map = {
+//     a:"abc"
+// }
+
+// console.log(map['a'])
+
+// let arr = [2, 3, 4, 5, 6, 7, 8, 9];
+// function pushA(a,ele) {
+//     a.push(0) 
+//     for (let i = 0; i <a.length; i++) {
+//         temp = a[i];
+//         a[i] = ele;
+//         ele = temp;
+//     }
+//     return a;
+// }
+
+// console.log(pushA(arr,10))
