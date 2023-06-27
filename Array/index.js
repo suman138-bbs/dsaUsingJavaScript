@@ -65,7 +65,7 @@
 
 // let arr = [2, 3, 4, 5, 6, 7, 8, 9];
 // function pushA(a,ele) {
-//     a.push(0) 
+//     a.push(0)
 //     for (let i = 0; i <a.length; i++) {
 //         temp = a[i];
 //         a[i] = ele;
@@ -75,3 +75,13 @@
 // }
 
 // console.log(pushA(arr,10))
+
+
+//////////////////////////////////
+
+
+let arr = [2, 3, 4, 5];
+
+arr.splice(2, 0, "hello4") // (where,how many element we want to delete,what we insert)
+
+console.log(arr)
