@@ -80,8 +80,58 @@
 //////////////////////////////////
 
 
-let arr = [2, 3, 4, 5];
+// let arr = [2, 3, 4, 5];
 
-arr.splice(2, 0, "hello4") // (where,how many element we want to delete,what we insert)
+// arr.splice(2, 0, "hello4") // (where,how many element we want to delete,what we insert)
 
-console.log(arr)
+// console.log(arr)
+// var a = 5;
+// console.log(a)
+
+// {
+//     var a = 10;
+//     console.log(a)
+// }
+// {
+//     var a = 20
+//     console.log(a)
+
+// }
+
+// console.log(a)
+
+// ////////////////////////////////
+
+// const gob = {
+//     a:"Suman",
+//     b: function () {
+//         console.log(this)
+//     },
+
+    
+// }
+
+// gob.b()
+
+
+class Player {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age
+    }
+    introduce() {
+        console.log(`MY name is ${this.name} and Age ${this.age} `)
+    }
+}
+
+class Engineer extends Player{
+    constructor(name ,age) {
+        super(name,age)
+    }
+    play() {
+        console.log(`${this.name} is playing`)
+    }
+}
+
+const pl1 = new Engineer("Suman", 23)
+pl1.play()
