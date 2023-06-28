@@ -114,24 +114,47 @@
 // gob.b()
 
 
-class Player {
-    constructor(name, age) {
-        this.name = name;
-        this.age = age
-    }
-    introduce() {
-        console.log(`MY name is ${this.name} and Age ${this.age} `)
-    }
-}
+// class Player {
+//     constructor(name, age) {
+//         this.name = name;
+//         this.age = age
+//     }
+//     introduce() {
+//         console.log(`MY name is ${this.name} and Age ${this.age} `)
+//     }
+// }
 
-class Engineer extends Player{
-    constructor(name ,age) {
-        super(name,age)
-    }
-    play() {
-        console.log(`${this.name} is playing`)
-    }
-}
+// class Engineer extends Player{
+//     constructor(name ,age) {
+//         super(name,age)
+//     }
+//     play() {
+//         console.log(`${this.name} is playing`)
+//     }
+// }
 
-const pl1 = new Engineer("Suman", 23)
-pl1.play()
+// const pl1 = new Engineer("Suman", 23)
+// pl1.play()
+
+
+/**
+ * Function that reverse a string
+ */
+
+
+var s = "Suman"
+
+function reverseS(arr) {
+    const a = arr.split("");
+        for (let i = 0; i < Math.floor(a.length / 2); i++){
+        temp = a[i];
+        a[i] = a[(a.length -1)-i ];
+        a[(a.length -1)-i] = temp;
+        
+        
+    }
+    return a.toString();
+
+}
+console.log(reverseS(s))
+
