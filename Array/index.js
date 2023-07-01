@@ -142,19 +142,56 @@
  */
 
 
-var s = "Suman"
+// var s = "Suman"
 
-function reverseS(arr) {
-    const a = arr.split("");
-        for (let i = 0; i < Math.floor(a.length / 2); i++){
-        temp = a[i];
-        a[i] = a[(a.length -1)-i ];
-        a[(a.length -1)-i] = temp;
+// function reverseS(arr) {
+//     const a = arr.split("");
+//         for (let i = 0; i < Math.floor(a.length / 2); i++){
+//         temp = a[i];
+//         a[i] = a[(a.length -1)-i ];
+//         a[(a.length -1)-i] = temp;
         
         
-    }
-    return a.toString();
+//     }
+//     return a.join("");
 
-}
-console.log(reverseS(s))
+// }
+// console.log(reverseS(s))
 
+
+// //
+// let string = "Suman"
+// console.log(string[0])
+// let ob = {
+//      s:"Suman"
+// }
+
+// const ob2 = { ...ob, s: "Pack" }
+
+// console.log(ob2)
+
+
+
+// Merge
+
+
+var merge = function(nums1, nums2) {
+    // if(nums2.length===0){
+    //     return nums1;
+    // }
+    // if(nums1.length ===0){
+    //     return nums2;
+    // }
+    //  if(nums1[0]===0 && nums1.length===1){
+    //     return nums2
+    // }
+
+    
+    let nums3 = [...nums1, ...nums2]
+    
+    let nums4 = nums3.sort()
+    return nums3
+
+};
+
+console.log(merge([1,3,5,2,0],[20,10,2,4]))
